@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spline Background</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #spline-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Send to background */
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎨 Spline Background -->
+  <div id="spline-bg">
+   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.24/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/D16v4SGPclKJEzL1/scene.splinecode"></spline-viewer>
+  </div>
+
+  <!-- 💬 Your Page Content -->
+  <div class="content">
+    <h1 style="text-align: center; color: black;"><b>STILL ANGRY(KOVAM) ? </b></h1>
+    <p style="color: black;">"You’re not just my best friend — you're my chosen family. I’ll always stand by you, not to change your path, but to remind you how strong, loved, and capable you truly are. 
+        Trust me just this once, like I trust you always."</p>
+  </div>
+
+</body>
+</html>

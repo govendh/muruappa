@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text to Voice</title>
+  <style>
+    body {
+      background-color: rgb(136, 235, 235);
+      font-family: Arial, sans-serif;
+    }
+
+    .blinking {
+      animation: blink 1s infinite;
+      color: darkblue;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    input, button {
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    button {
+      background-color: darkblue;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: navy;
+    }
+  </style>
+</head>
+<body>
+
+  <center>
+    <h1 class="blinking">text-to-voice</h1>
+    <input type="text" placeholder="type here" id="a" /><br /><br>
+    <button onclick="speak()"> Speak</button>
+  </center>
+
+  <script>
+    function speak() {
+      let name = "enitha";
+      const input = document.getElementById('a').value.trim();
+
+      let message;
+      if (input.toLowerCase() === name.toLowerCase()) {
+        message = "hey you it's you and you win !!!  kovam vendam samathanam okay ";
+      } else {
+        message = input;
+      }
+
+      const utterance = new SpeechSynthesisUtterance(message);
+      utterance.lang = "en-US";
+      speechSynthesis.speak(utterance);
+    }
+  </script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2><b>please after long open it , spend time with this </b></h2>
+  <h1><b>voice to text and enter <enitha> and see after open the below</b></h1>
+    <br>
+    <a href="z.html" target="_blank">open later.....!!!!!</a>
+
+</body>
+</html>

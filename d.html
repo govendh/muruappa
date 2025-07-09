@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vidukathai Checker</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: blue;
+    }
+  </style>
+</head>
+<body style="
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+">
+
+<center>
+  <h2>🧠 Vidukathai Time!</h2>
+  <p><strong>Vidukathai:</strong> Suthi irukkum, aana nadakkadhu. Enna?</p>
+
+  <input type="text" id="userAnswer" placeholder="Ungal badhil...">
+  <button onclick="checkAnswer()">Submit</button>
+
+  <div id="result"></div>
+
+  <script>
+    function checkAnswer() {
+      const correctAnswer = "kaal";
+      const userInput = document.getElementById("userAnswer").value.trim().toLowerCase();
+      const resultDiv = document.getElementById("result");
+
+      if (userInput === correctAnswer) {
+        resultDiv.style.color = "green";
+        resultDiv.textContent = "✅ Correct! Super da!";
+      } else {
+        resultDiv.style.color = "red";
+        resultDiv.textContent = "❌ Wrong! Correct answer is: " + correctAnswer;
+      }
+    }
+  </script>
+<br><br><br>
+
+<h1>😂😂😂😂😂😂😂😂😂😂😂</h1><br>
+<h2>next surprice confirm pa </h2>
+
+<a href="e.html" target="_parent"> kill me 🥵...</a>
+</center>
+</body>
+</html>

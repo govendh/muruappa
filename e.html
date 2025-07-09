@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vidukathai 2</title>
+</head>
+<body style="
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+">
+
+  <center>
+  <h2>🧠 Vidukathai </h2>
+  <p><strong>Q:</strong> Iravu vara paal kudikkum, kaal vara kai vidum. Enna?</p>
+
+  <input type="text" id="answer2" placeholder="Ungal badhil...">
+  <button onclick="checkAnswer()">Submit</button>
+  <div id="result2"></div>
+
+  <script>
+    function checkAnswer() {
+      const correct = "vilakku";
+      const user = document.getElementById("answer2").value.trim().toLowerCase();
+      const result = document.getElementById("result2");
+      if (user === correct) {
+        result.innerHTML = "✅ Correct!";
+        result.style.color = "green";
+      } else {
+        result.innerHTML = "❌ Wrong! Correct answer is: " + correct;
+        result.style.color = "red";
+      }
+    }
+  </script>
+  <br><br><br>
+  <h1>aiyo paavam neee loosu maari surprice ki waiting ohhhh </h1>
+  <br><br>
+  <a href="f.html" target="_parent"> kolla pannu ennaiya </a></center>
+</body>
+</html>

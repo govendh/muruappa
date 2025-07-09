@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vidukathai 4</title>
+</head>
+<body style="background-color: rgb(33, 77, 128);">
+  <center>
+  <h2>🧠 Vidukathai </h2>
+  <p><strong>Q:</strong> Thala irukku, kaal illai. Enna?</p>
+
+  <input type="text" id="answer4" placeholder="Ungal badhil...">
+  <button onclick="checkAnswer()">Submit</button>
+  <div id="result4"></div>
+
+  <script>
+    function checkAnswer() {
+      const correct = "paal";
+      const user = document.getElementById("answer4").value.trim().toLowerCase();
+      const result = document.getElementById("result4");
+      if (user === correct) {
+        result.innerHTML = "✅ Correct!";
+        result.style.color = "green";
+      } else {
+        result.innerHTML = "❌ Wrong! Correct answer is: " + correct;
+        result.style.color = "red";
+      }
+    }
+  </script>
+
+
+<h1>nee en mela kovama irupa nu therium but naan loosu maari pannitu irukan la 🤥</h1>
+<br><br><h1><b>lets end up </b></h1>
+<a href="x.html" target="_parent"> ended ..... nandri 🥱</a>
+</center>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vidukathai 3</title>
+</head>
+<body style="background-image: url(https://i.pinimg.com/originals/75/c5/fc/75c5fc79be418e99f1719ee8bab136bf.jpg);">
+  <center style="color: rgb(255, 255, 255);">
+  <h2>🧠 Vidukathai </h2>
+  <p><strong>Q:</strong> Sutri sutri varuven, oru idaththil iruppen. Enna?</p>
+
+  <input type="text" id="answer3" placeholder="Ungal badhil...">
+  <button onclick="checkAnswer()">Submit</button>
+  <div id="result3"></div>
+
+  <script>
+    function checkAnswer() {
+      const correct = "sui";
+      const user = document.getElementById("answer3").value.trim().toLowerCase();
+      const result = document.getElementById("result3");
+      if (user === correct) {
+        result.innerHTML = "✅ Correct!";
+        result.style.color = "green";
+      } else {
+        result.innerHTML = "❌ Wrong! Correct answer is: " + correct;
+        result.style.color = "red";
+      }
+    }
+  </script>
+
+  <h1>😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆</h1>
+  <h2>pothum mudiyala da saaami </h2>
+  <a href="g.html" target="_parent">click here</a>
+  </center>
+</body>
+</html>
